@@ -1,44 +1,52 @@
 .header-container {
-  /* max-width: 100%;
-  height: 100%;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden; /* Ensure no overflow issues */
   top: 0%;
-  bottom: 0%; */
+  bottom: 0%;
   box-sizing: border-box;
+  font-family: "Jost" !important;
 }
 .context-container {
-  /* top: 40px;
-  left: 50px; */
-  /* padding-left: 90px;
-  padding-top: 65px; */
+  padding-top: 140px;
+  padding-left: 110px;
+  width: 55%;
+}
+.checkboxBtns {
+  margin-right: 121px;
+  position: relative;
+  right: 0%;
+}
+.headerImg-div {
 }
 .header-image {
   position: relative;
-  width: auto;
-  height: 650px;
-  /* font-size: 50%; */
-  /* left: -161px; */
-  /* object-fit: none; */
+  width: 1511px;
+  height: 994px;
   transition: transform 0.3s ease-in-out;
+  position: relative;
+  right: 2%;
+  top: 0%;
+  bottom: 6%;
+  /* z-index: -1; Place behind text */
+  /* position: absolute; */
+  /* top: 0; */
+  left: 0%;
 }
 
 .cta-button {
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out;
   font-size: 20px;
+  padding: 18px 0px; */
 }
 .responsive-heading {
   /* Adjust to control character wrapping */
   line-height: 1.3; /* Tighter line spacing */
-
   width: 500px;
   text-align: start;
 }
 
-@media (max-width: 768px) {
-  .responsive-heading {
-    max-width: 30ch; /* Narrower for smaller screens */
-    font-size: 1.875rem; /* Tailwind's `text-3xl` equivalent */
-  }
-}
 .cta-button:hover {
   background-color: #f1f1f1;
 }
@@ -46,18 +54,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Distribute space evenly */
-  padding: 0 15rem; /* Add left and right spacing */
+  padding: 0 300px; /* Add left and right spacing */
   gap: 1rem; /* Add spacing between logos */
   position: absolute;
-  bottom: 45px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
 
 .logo-item {
-  max-width: 194;
-  height: 40;
-  transition: transform 0.3s ease-in-out;
+  height: 35px;
 }
 
 .logo-item:hover {
@@ -65,16 +71,43 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .logos-container {
-    justify-content: center; /* Center logos on smaller screens */
-    gap: 0.5rem; /* Reduce gap for smaller screens */
+@media (max-width: 960px) {
+  .header-container {
+    padding: 5px;
   }
-  /* .header-image {
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    width: 90rem;
-    height: 50rem;
-    left: -161px;
+  .header-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind text and buttons */
+    object-fit: cover; /* Ensure the image covers the space */
+  }
+  /* .headerImg-div {
+    z-index: -1;
   } */
+  .context-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .responsive-heading {
+    max-width: 100%; /* Narrower for smaller screens */
+    font-size: 1.875rem; /* Tailwind's `text-3xl` equivalent */
+  }
+  .logos-container {
+    /* position: relative; */
+    margin-top: 20px;
+    /* gap: 0.5rem; */
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space evenly */
+    padding: 0 110px; /* Add left and right spacing */
+    gap: 1rem; /* Add spacing between logos */
+    position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
+  }
 }
