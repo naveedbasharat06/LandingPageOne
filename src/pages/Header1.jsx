@@ -106,6 +106,11 @@ const Header1 = () => {
         </div>
         {/* </div> */}
       </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laborum
+        odio dolorem culpa voluptatem asperiores dolor fugit hic facilis. Quas
+        officia, nihil doloribus ex sed labore consequatur odit obcaecati earum!
+      </p>
     </div>
   );
 };
