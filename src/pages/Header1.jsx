@@ -13,104 +13,90 @@ const Header1 = () => {
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
+    // Toggle the selected option if it's already selected
+    // setSelectedOption((prev) => (prev === option ? "" : option));
   };
   return (
-    <div className="header-container bg-gradient-to-r from-pink-200 via-orange-100 to-purple-200 ... mx-auto">
+    <div className="header-container bg-gradient-to-br from-orange-100 via-pink-200 via-pink-200 to-purple-400  mx-auto">
       {/* Header Section */}
-      <div className="">
-        {/* <div className="flex flex-col md:flex-row lg:flex-row items-center md:justify-between container mx-auto"> */}
-        <div className=" flex flex-col md:flex-row lg:flex-row">
-          {/* Text Section */}
-          {/* <div className="z-20 w-full md:w-1/2 text-start md:text-left  context-container"> */}
-          <div className="text-start md:text-left context-container">
-            <div>
-              <h1 className="responsive-heading text-3xl md:text-5xl font-bold font-Jost text-black">
-                Achieve Your Dream Figure with Quick and Effective Workouts.
-              </h1>
-              <p
-                className="mt-4 text-lg text-black-400"
-                style={{ fontSize: "2.1rem", lineHeight: "2.1rem " }}
-              >
-                Take this 30-second quiz <br /> to find out how.
-              </p>
-            </div>
-            <div className="checkboxBtns mt-8 flex lg:flex-row md:flex-col sm:flex-col gap-4">
-              {/* Option 1: Women */}
-              <button
-                className={`w-full px-2 py-3 text-center font-medium rounded-lg relative ${
-                  selectedOption === "women"
-                    ? "bg-purple-500 text-white border-purple-500"
-                    : "bg-white text-black border-gray-300"
-                }`}
-                onClick={() => handleOptionChange("women")}
-              >
-                <input
-                  type="radio"
-                  name="gender"
-                  value="women"
-                  className="absolute left-4 h-5 w-5 accent-purple-500"
-                  checked={selectedOption === "women"}
-                  onChange={() => handleOptionChange("women")}
-                />
-                ♀ Women Start Here
-              </button>
 
-              {/* Option 2: Men */}
-              <button
-                className={`w-full px-2 py-3 text-center font-medium rounded-lg relative ${
-                  selectedOption === "men"
-                    ? "bg-purple-500 text-white border-purple-500"
-                    : "bg-white text-black border-gray-300"
-                }`}
-                onClick={() => handleOptionChange("men")}
-              >
-                <input
-                  type="radio"
-                  name="gender"
-                  value="men"
-                  className="absolute left-4 h-5 w-5 accent-purple-500"
-                  checked={selectedOption === "men"}
-                  onChange={() => handleOptionChange("men")}
-                />
-                ♂ Men Start Here
-              </button>
-            </div>
+      <div className=" flex flex-col md:flex-row lg:flex-row">
+        {/* Text Section */}
+        <div className="text-start md:text-left context-container">
+          <div>
+            <h1 className="responsive-heading  font-bold font-Jost text-black">
+              Achieve Your Dream Figure with Quick and Effective Workouts.
+            </h1>
+            <p className="header-text text-black-400">
+              Take this 30-second quiz <br /> to find out how.
+            </p>
           </div>
-          {/* <span className="mr-4">⚪</span> &emsp; ♀ Women Start Here */}
-          {/* Image Section */}
-          <div className="headerImg-div relative justify-center md:justify-left sm:justify-center">
-            <img
-              src={headerImg01}
-              alt="Fitness Woman"
-              className="header-image lg:pr-20"
-            />
+          <div className="checkboxBtn-div flex lg:flex-row md:flex-col sm:flex-col gap-4">
+            {/* Option 1: Women */}
+            <button
+              className={`radioBtn w-full px-3 py-3 text-center font-medium rounded-lg relative ${
+                selectedOption === "women"
+                  ? "bg-purple-500 text-white border-purple-500"
+                  : "bg-white text-black border-gray-300"
+              }`}
+              onClick={() => handleOptionChange("women")}
+            >
+              <input
+                type="radio"
+                name="gender"
+                value="women"
+                className="absolute left-4 h-6 w-6 accent-purple-500"
+                checked={selectedOption === "women"}
+                onChange={() => handleOptionChange("women")}
+              />
+              ♀ &nbsp; Women Start Here
+            </button>
+
+            {/* Option 2: Men */}
+            <button
+              className={`radioBtn w-full px-3 py-3 text-center font-medium rounded-lg relative ${
+                selectedOption === "men"
+                  ? "bg-purple-500 text-white border-purple-500"
+                  : "bg-white text-black border-gray-300"
+              }`}
+              onClick={() => handleOptionChange("men")}
+            >
+              <input
+                type="radio"
+                name="gender"
+                value="men"
+                className="absolute left-4 h-6 w-6 accent-purple-500"
+                checked={selectedOption === "men"}
+                onChange={() => handleOptionChange("men")}
+              />
+              ♂ &nbsp; Men Start Here
+            </button>
           </div>
         </div>
-        {/* Footer Section */}
-        {/* <div className="my-6"> */}
-        <div className="logos-container mt-10 flex flex-wrap  lg:justify-between md:d-grid gap-2">
-          <img src={WHLogo} alt="Women's Health" className="logo-item" />
-          <img src={Vector} alt="Forbes" className="logo-item" />
-          <img
-            src={MAYCLINIC}
-            alt="Mayo Clinic"
-            className="logo-item"
-            style={{ height: "65px" }}
-          />
-          <img
-            src={WallStreatJ}
-            alt="The Wall Street Journal"
-            className="logo-item"
-          />
-          <img src={VOGUF} alt="Vogue" className="logo-item" />
+
+        {/* Image Section */}
+        <div className="headerImg-div">
+          <img src={headerImg01} alt="Fitness Woman" className="header-image" />
         </div>
-        {/* </div> */}
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laborum
-        odio dolorem culpa voluptatem asperiores dolor fugit hic facilis. Quas
-        officia, nihil doloribus ex sed labore consequatur odit obcaecati earum!
-      </p>
+      {/* Footer Section */}
+
+      <div className="logos-container flex flex-wrap  lg:justify-between md:d-grid gap-2">
+        <img src={WHLogo} alt="Women's Health" className="logo-item" />
+        <img src={Vector} alt="Forbes" className="logo-item" />
+        <img
+          src={MAYCLINIC}
+          alt="Mayo Clinic"
+          className="logo-item"
+          style={{ height: "65px" }}
+        />
+        <img
+          src={WallStreatJ}
+          alt="The Wall Street Journal"
+          className="logo-item"
+        />
+        <img src={VOGUF} alt="Vogue" className="logo-item" />
+      </div>
     </div>
   );
 };
