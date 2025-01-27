@@ -12,19 +12,20 @@ const Header1 = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionChange = (option) => {
-    setSelectedOption(option);
+    // setSelectedOption(option);
     // Toggle the selected option if it's already selected
-    // setSelectedOption((prev) => (prev === option ? "" : option));
+    setSelectedOption((prev) => (prev === option ? "" : option));
   };
   return (
     <div className="header-container bg-gradient-to-br from-orange-100 via-pink-200 via-pink-200 to-purple-400  mx-auto">
       {/* Header Section */}
 
-      <div className=" flex flex-col md:flex-row lg:flex-row">
+      {/* <div className=" flex flex-col md:flex-row lg:flex-row sm:flex-row"> */}
+      <div className="contextAndHeaderImage_div">
         {/* Text Section */}
-        <div className="text-start md:text-left context-container">
+        <div className="text-start context-container">
           <div>
-            <h1 className="responsive-heading  font-bold font-Jost text-black">
+            <h1 className="responsive-heading font-Jost text-black">
               Achieve Your Dream Figure with Quick and Effective Workouts.
             </h1>
             <p className="header-text text-black-400">
@@ -32,6 +33,7 @@ const Header1 = () => {
             </p>
           </div>
           <div className="checkboxBtn-div flex lg:flex-row md:flex-col sm:flex-col gap-4">
+            {/* <div className="checkboxBtn-div gap-4"> */}
             {/* Option 1: Women */}
             <button
               className={`radioBtn w-full px-3 py-3 text-center font-medium rounded-lg relative ${

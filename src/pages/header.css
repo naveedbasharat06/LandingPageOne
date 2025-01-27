@@ -1,5 +1,7 @@
 .header-container {
-  max-width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 1920px;
   position: relative;
   height: 1080px;
   overflow: hidden; /* Ensure no overflow issues */
@@ -8,6 +10,10 @@
   box-sizing: border-box;
   font-family: "Jost" !important;
   /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+}
+.contextAndHeaderImage_div {
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Default: stack items vertically */
 }
 .context-container {
   padding-top: 140px;
@@ -45,7 +51,7 @@
   width: 790px;
   text-align: start;
   font-size: 74px;
-  /* font-weight: 600; */
+  font-weight: 550;
 }
 .header-text {
   margin-top: 32px;
@@ -73,46 +79,365 @@
   transform: scale(1.1); /* Slight zoom on hover */
   cursor: pointer;
 }
-
-/* Responsive Styles */
-@media (max-width: 960px) {
+/* responsive for(large screen) minimum the  1440px screen */
+@media only screen and (max-width: 1680px) {
   .header-container {
-    padding: 5px;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .context-container {
+    padding-top: 80px;
+    padding-left: 52px;
+    /* width: 55%; */
+    z-index: 1;
+  }
+  .contextAndHeaderImage_div {
+    display: flex; /* Flexbox container */
+    flex-direction: column; /* Default: stack items vertically */
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    right: 0%;
+    width: 56%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 22px 0px;
+    font-size: 20px;
   }
   .header-image {
+    /* position: relative; */
     position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
     /* z-index: -1; */
-    /* Place behind text and buttons */
-    object-fit: cover; /* Ensure the image covers the space */
-  }
-  /* .headerImg-div {
-    z-index: -1;
-  } */
-  .context-container {
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 100%;
+    width: 80%;
+    height: 80%;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    margin-bottom: 6%;
   }
   .responsive-heading {
-    max-width: 100%; /* Narrower for smaller screens */
-    font-size: 1.875rem; /* Tailwind's `text-3xl` equivalent */
+    width: 790px;
+    text-align: start;
+    font-size: 62px;
+    font-weight: 550;
+  }
+  .header-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: 2.1rem;
+    width: 520px;
   }
   .logos-container {
-    /* position: relative; */
-    margin-top: 20px;
-    /* gap: 0.5rem; */
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribute space evenly */
-    padding: 0 110px; /* Add left and right spacing */
+    padding: 0 140px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    top: 230px;
+    bottom: 20%;
     left: 0;
     right: 0;
+  }
+
+  .logo-item {
+    height: 35px;
+  }
+}
+/* responsive for(large screen) minimum the  1440px screen */
+@media only screen and (max-width: 1440px) {
+  .header-container {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .context-container {
+    padding-top: 80px;
+    padding-left: 52px;
+    /* width: 55%; */
+    z-index: 1;
+  }
+  .contextAndHeaderImage_div {
+    display: flex; /* Flexbox container */
+    flex-direction: column; /* Default: stack items vertically */
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    right: 0%;
+    width: 56%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 22px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 80%;
+    height: 80%;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    width: 790px;
+    text-align: start;
+    font-size: 62px;
+    font-weight: 550;
+  }
+  .header-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: 2.1rem;
+    width: 520px;
+  }
+  .logos-container {
+    padding: 0 100px; /* Add left and right spacing */
+    gap: 1rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-item {
+    height: 35px;
+  }
+}
+/* Responsive for (desktop) minimum the 1280px device */
+@media (max-width: 1280px) {
+  .header-container {
+    position: relative;
+    height: 1000px;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    display: flex; /* Flexbox container */
+    flex-direction: column; /* Default: stack items vertically */
+  }
+  .context-container {
+    padding-top: 52px;
+    padding-left: 40px;
+    width: 680px;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    right: 0%;
+    width: 85%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 22px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 83%;
+    height: 80%;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 615px;
+    text-align: start;
+    font-size: 52px;
+    font-weight: 550;
+  }
+  .header-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 108px; /* Add left and right spacing */
+    gap: 1rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-item {
+    height: 35px;
+  }
+}
+/* Responsive for (tabler/desktop)minumum device the 960px device */
+@media (max-width: 960px) {
+  .header-container {
+    position: relative;
+    height: 1000px;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .context-container {
+    padding-top: 33px;
+    padding-left: 30px;
+    width: 515px;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    right: 0%;
+    width: 85%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 22px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 83%;
+    height: 80%;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 520px;
+    text-align: start;
+    font-size: 42px;
+    /* font-weight: 600; */
+  }
+  .header-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px; /* Add left and right spacing */
+    gap: 1rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-item {
+    height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container {
+    position: relative;
+    height: 880px;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    padding-top: 60px;
+    padding-left: 16px;
+    width: auto;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    margin-right: 13px;
+    flex-direction: column;
+    bottom: 23%;
+    width: auto;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 15px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 600px;
+    height: 400px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 31%;
+    bottom: 0%;
+    left: 18%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 378px;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 550;
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 210px;
+    font-size: 38px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 1rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-item {
+    height: 27px;
   }
 }
