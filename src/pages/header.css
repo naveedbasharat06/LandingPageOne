@@ -86,6 +86,7 @@
     overflow: hidden; /* Ensure no overflow issues */
     top: 0%;
     bottom: 0%;
+    height: 860px;
     /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
   }
   .context-container {
@@ -102,7 +103,7 @@
     margin-right: 0px;
     position: relative;
     right: 0%;
-    width: 56%;
+    width: 50%;
   }
   .headerImg-div {
   }
@@ -114,13 +115,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 80%;
-    height: 80%;
+    width: 1007px;
+    height: 778px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 25%;
+    left: 43%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -140,7 +141,7 @@
     padding: 0 140px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 20%;
+    bottom: 8%;
     left: 0;
     right: 0;
   }
@@ -172,31 +173,31 @@
     margin-right: 0px;
     position: relative;
     right: 0%;
-    width: 56%;
+    width: 45%;
   }
   .headerImg-div {
   }
   .radioBtn {
-    padding: 22px 0px;
-    font-size: 20px;
+    padding: 18px 0px;
+    font-size: 18px;
   }
   .header-image {
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 80%;
-    height: 80%;
+    width: 950px;
+    height: 780px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 25%;
+    left: 39%;
     margin-bottom: 6%;
   }
   .responsive-heading {
-    width: 790px;
+    width: 625px;
     text-align: start;
-    font-size: 62px;
+    font-size: 57px;
     font-weight: 550;
   }
   .header-text {
@@ -210,7 +211,7 @@
     padding: 0 100px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 20%;
+    bottom: 7%;
     left: 0;
     right: 0;
   }
@@ -234,8 +235,8 @@
     flex-direction: column; /* Default: stack items vertically */
   }
   .context-container {
-    padding-top: 52px;
-    padding-left: 40px;
+    padding-top: 83px;
+    padding-left: 56px;
     width: 680px;
     z-index: 1;
   }
@@ -248,7 +249,7 @@
   .headerImg-div {
   }
   .radioBtn {
-    padding: 22px 0px;
+    padding: 18px 0px;
     font-size: 20px;
   }
   .header-image {
@@ -267,15 +268,15 @@
   .responsive-heading {
     /* Adjust to control character wrapping */
     line-height: 1.1; /* Tighter line spacing */
-    width: 615px;
+    width: 588px;
     text-align: start;
-    font-size: 52px;
+    font-size: 46px;
     font-weight: 550;
   }
   .header-text {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 38px;
+    margin-top: 33px;
+    margin-bottom: 82px;
+    font-size: 36px;
     line-height: 2.1rem;
   }
   .logos-container {
@@ -285,7 +286,7 @@
     padding: 0 108px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 22%;
+    bottom: 20%;
     left: 0;
     right: 0;
   }
@@ -365,6 +366,7 @@
     height: 35px;
   }
 }
+/* Responsive Design For Tablet 768px device */
 @media (max-width: 768px) {
   .header-container {
     position: relative;
@@ -395,20 +397,20 @@
   .headerImg-div {
   }
   .radioBtn {
-    padding: 15px 0px;
+    padding: 17px 0px;
     font-size: 20px;
   }
   .header-image {
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 600px;
-    height: 400px;
+    width: 680px;
+    height: 425px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
-    top: 31%;
+    top: 28%;
     bottom: 0%;
-    left: 18%;
+    left: 13%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -421,7 +423,7 @@
   }
   .header-text {
     margin-top: 24px;
-    margin-bottom: 210px;
+    margin-bottom: 208px;
     font-size: 38px;
     line-height: 2.1rem;
   }
@@ -429,15 +431,338 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 16px; /* Add left and right spacing */
-    gap: 1rem; /* Add spacing between logos */
+    padding: 0px 16px; /* Add left and right spacing */
+    gap: 0.3rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 0%;
+    bottom: 1%;
     left: 0;
     right: 0;
   }
 
   .logo-item {
     height: 27px;
+  }
+
+  #WHLogo {
+    width: 105px;
+    height: 22px;
+  }
+  #Forbes {
+    width: 82px;
+    height: 21px;
+  }
+  #MAYCLINIC {
+    width: 58px;
+    height: 41px;
+  }
+  #WallStreatJ {
+    width: 245px;
+    height: 22px;
+  }
+
+  #Vogue {
+    width: 90px;
+    height: 21px;
+  }
+}
+@media (max-width: 568px) {
+  .header-container {
+    position: relative;
+    max-width: 568px;
+    height: 844px;
+    top: 0%;
+    bottom: 0%;
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    /* margin: 60px 16px 0px 16px; */
+    width: auto;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 97%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 17px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570px;
+    height: 380px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 26%;
+    bottom: 0%;
+    left: 1%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 400px;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 500;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 192px;
+    font-size: 22px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    width: 545px;
+  }
+
+  .logo-item {
+    height: 27px;
+  }
+  #WHLogo {
+    width: 97px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 73px;
+    height: 18px;
+  }
+  #MAYCLINIC {
+    width: 36px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 55px;
+    height: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .header-container {
+    position: relative;
+    max-width: 568px;
+    height: 844px;
+    top: 0%;
+    bottom: 0%;
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    /* margin: 60px 16px 0px 16px; */
+    width: auto;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 97%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 17px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570px;
+    height: 380px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 26%;
+    bottom: 0%;
+    left: 1%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 400px;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 500;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 192px;
+    font-size: 22px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    width: 407px;
+  }
+
+  .logo-item {
+    height: 27px;
+  }
+  #WHLogo {
+    width: 97px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 73px;
+    height: 18px;
+  }
+  #MAYCLINIC {
+    width: 36px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 55px;
+    height: 14px;
+  }
+}
+/* Responsive Design For mobile View 390px device  */
+@media (max-width: 390px) {
+  .header-container {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    top: 0%;
+    bottom: 0%;
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    /* margin: 60px 16px 0px 16px; */
+    width: auto;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 354px;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 17px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570px;
+    height: 365px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 31%;
+    bottom: 0%;
+    left: 6%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 358px;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 500;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 177px;
+    font-size: 22px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 358px;
+  }
+
+  .logo-item {
+    height: 27px;
+  }
+  #WHLogo {
+    width: 97px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 73px;
+    height: 18px;
+  }
+  #MAYCLINIC {
+    width: 36px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 55px;
+    height: 14px;
   }
 }

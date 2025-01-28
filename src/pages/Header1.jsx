@@ -17,7 +17,7 @@ const Header1 = () => {
     setSelectedOption((prev) => (prev === option ? "" : option));
   };
   return (
-    <div className="header-container bg-gradient-to-br from-orange-100 via-pink-200 via-pink-200 to-purple-400  mx-auto">
+    <div className="header-container bg-gradient-to-br from-orange-100 via-pink-200 via-blue-200 via-green-200 via-orange-200 to-purple-400 h-screen  mx-auto">
       {/* Header Section */}
 
       {/* <div className=" flex flex-col md:flex-row lg:flex-row sm:flex-row"> */}
@@ -29,7 +29,7 @@ const Header1 = () => {
               Achieve Your Dream Figure with Quick and Effective Workouts.
             </h1>
             <p className="header-text text-black-400">
-              Take this 30-second quiz <br /> to find out how.
+              Take this 30-second quiz <br /> to find out how
             </p>
           </div>
           <div className="checkboxBtn-div flex lg:flex-row md:flex-col sm:flex-col gap-4">
@@ -83,21 +83,28 @@ const Header1 = () => {
       </div>
       {/* Footer Section */}
 
-      <div className="logos-container flex flex-wrap  lg:justify-between md:d-grid gap-2">
-        <img src={WHLogo} alt="Women's Health" className="logo-item" />
-        <img src={Vector} alt="Forbes" className="logo-item" />
+      <div className="logos-container flex flex-wrap  lg:justify-between md:d-grid sm:d-grid gap-2">
+        <img
+          src={WHLogo}
+          alt="Women's Health"
+          className="logo-item"
+          id="WHLogo"
+        />
+        <img src={Vector} alt="Forbes" className="logo-item" id="Forbes" />
         <img
           src={MAYCLINIC}
           alt="Mayo Clinic"
           className="logo-item"
           style={{ height: "65px" }}
+          id="MAYCLINIC"
         />
         <img
           src={WallStreatJ}
           alt="The Wall Street Journal"
           className="logo-item"
+          id="WallStreatJ"
         />
-        <img src={VOGUF} alt="Vogue" className="logo-item" />
+        <img src={VOGUF} alt="Vogue" className="logo-item" id="Vogue" />
       </div>
     </div>
   );
