@@ -17,10 +17,9 @@ const Header1 = () => {
     setSelectedOption((prev) => (prev === option ? "" : option));
   };
   return (
-    <div className="header-container bg-gradient-to-br from-orange-100 via-pink-200 via-blue-200 via-green-200 via-orange-200 to-purple-400 h-screen  mx-auto">
+    <div className="header-container  mx-auto">
       {/* Header Section */}
 
-      {/* <div className=" flex flex-col md:flex-row lg:flex-row sm:flex-row"> */}
       <div className="contextAndHeaderImage_div">
         {/* Text Section */}
         <div className="text-start context-container">
@@ -82,7 +81,7 @@ const Header1 = () => {
         </div>
       </div>
       {/* Footer Section */}
-
+      {/* Logos for large device */}
       <div className="logos-container flex flex-wrap  lg:justify-between md:d-grid sm:d-grid gap-2">
         <img
           src={WHLogo}
@@ -105,6 +104,35 @@ const Header1 = () => {
           id="WallStreatJ"
         />
         <img src={VOGUF} alt="Vogue" className="logo-item" id="Vogue" />
+      </div>
+      {/* Mobile View Logos Design */}
+      <div className="logos-container-4Mobile">
+        <div className="top_row_logos flex d-flex">
+          <img
+            src={WHLogo}
+            alt="Women's Health"
+            className="logo-item"
+            id="WHLogo"
+          />
+          <img src={Vector} alt="Forbes" className="logo-item" id="Forbes" />
+        </div>
+        <div className="bottom_row_logos flex d-flex">
+          <img src={VOGUF} alt="Vogue" className="logo-item" id="Vogue" />
+          <img
+            src={WallStreatJ}
+            alt="The Wall Street Journal"
+            className="logo-item"
+            id="WallStreatJ"
+          />
+
+          <img
+            src={MAYCLINIC}
+            alt="Mayo Clinic"
+            className="logo-item"
+            style={{ height: "65px" }}
+            id="MAYCLINIC"
+          />
+        </div>
       </div>
     </div>
   );

@@ -33,6 +33,24 @@ const cardsData = [
     options: ["HyperText Markup Language", "HyperType Value", "Not sure"],
     correct: "HyperText Markup Language",
   },
+  {
+    id: 4,
+    title: "Achieve Your Dream Figure with Quick and Effective Workouts.",
+    description:
+      "Which of the following activites improves aerobic endurance the most?",
+    subText: "(Knowing basic web terms can help you in development).",
+    options: ["Stretching", "Weightliting", "Swimming", "Archery"],
+    correct: "Swimming",
+  },
+  {
+    id: 4,
+    title: "The ability to maintain equilibrium when staonary or moving:",
+    description:
+      "The ability to maintain equilibrium when staonary or moving:",
+    subText: "(Knowing basic web terms can help you in development).",
+    options: ["Accuracy", "Flexibility", "Balance", "Agility"],
+    correct: "Balance",
+  },
 ];
 
 const PaginatedCards = () => {
@@ -64,6 +82,7 @@ const PaginatedCards = () => {
   const checkAnswer = () => {
     return selectedOption === cardsData[currentCardIndex].correct;
   };
+
   const progressPercentage = ((currentCardIndex + 1) / cardsData.length) * 100;
   return (
     <div className="min-h-screen bg-gradient-to-r from-yellow-100 via-pink-300 to-purple-200 flex items-center justify-center py-8 px-4">
@@ -72,6 +91,7 @@ const PaginatedCards = () => {
         <h1 className="text-2xl font-medium text-gray-800 leading-tight mx-4">
           {cardsData[currentCardIndex].title}
         </h1>
+
         <div className="w-full bg-gray-300 rounded-full h-4 mb-6 mt-2  ">
           <div
             className="bg-purple-500 h-4 rounded-full bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400"
@@ -81,11 +101,9 @@ const PaginatedCards = () => {
         <p className="mt-4 text-black-400 font-bold  mx-4">
           {cardsData[currentCardIndex].description}
         </p>
-
         <p className="mt-2 text-gray-500 text-sm mx-4">
           {cardsData[currentCardIndex].subText}
         </p>
-
         {/* Options */}
         <div className="mt-4 space-y-4">
           {cardsData[currentCardIndex].options.map((option, index) => (
@@ -111,7 +129,6 @@ const PaginatedCards = () => {
             </button>
           ))}
         </div>
-
         {/* Navigation Buttons */}
         <div className="mt-6 flex justify-between">
           <button
