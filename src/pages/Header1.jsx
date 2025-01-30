@@ -8,13 +8,14 @@ import WHLogo from "../pages/images/WHLogo.png";
 
 import "./header.css"; // Import custom CSS for additional styling
 
-const Header1 = () => {
+const Header1 = ({ onGenderSelect }) => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionChange = (option) => {
     // setSelectedOption(option);
     // Toggle the selected option if it's already selected
     setSelectedOption((prev) => (prev === option ? "" : option));
+    onGenderSelect();
   };
   return (
     <div className="header-container  mx-auto">
@@ -82,7 +83,7 @@ const Header1 = () => {
       </div>
       {/* Footer Section */}
       {/* Logos for large device */}
-      <div className="logos-container flex flex-wrap  lg:justify-between md:d-grid sm:d-grid gap-2">
+      <div className="logos-container flex flex-wrap lg:justify-between md:d-grid sm:d-grid gap-2">
         <img
           src={WHLogo}
           alt="Women's Health"
@@ -94,7 +95,6 @@ const Header1 = () => {
           src={MAYCLINIC}
           alt="Mayo Clinic"
           className="logo-item"
-          style={{ height: "65px" }}
           id="MAYCLINIC"
         />
         <img
@@ -129,7 +129,6 @@ const Header1 = () => {
             src={MAYCLINIC}
             alt="Mayo Clinic"
             className="logo-item"
-            style={{ height: "65px" }}
             id="MAYCLINIC"
           />
         </div>

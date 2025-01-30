@@ -3,3 +3,18 @@
   margin: 0;
   padding: 0;
 }
+.App {
+  max-width: 1920px;
+  /* position: relative; */
+  height: 1080px;
+  /* overflow: hidden; */
+  /* top: 0%; */
+  /* bottom: 0%; */
+  box-sizing: border-box;
+  font-family: "Jost" !important;
+  background-image: url("./pages/images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

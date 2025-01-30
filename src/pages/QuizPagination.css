@@ -1,0 +1,19 @@
+.paginationCard-main {
+}
+.Quiz_Card {
+  /* background-color: rgb(244, 246, 248); */
+  /* position: absolute; */
+  max-width: 834px;
+  /* max-height: 698px; */
+  max-height: auto;
+
+  align-items: center;
+  text-align: center;
+  /* margin: 191px 543px; */
+  margin-top: 190px;
+  /* top: 191px;
+  bottom: 191px;
+  left: 543px;
+  right: 543px; */
+  padding: 40px 52px 20px 52px;
+}

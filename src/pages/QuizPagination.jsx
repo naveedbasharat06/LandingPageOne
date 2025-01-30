@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import "./QuizPagination.css";
 // import headerImg01 from "../pages/images/headerImg01.png";
 // import MAYCLINIC from "../pages/images/mayoC.png";
 // import Vector from "../pages/images/Vector.png";
 // import VOGUF from "../pages/images/VOGUF.png";
 // import WallStreatJ from "../pages/images/wallstreetJ.png";
 // import WHLogo from "../pages/images/WHLogo.png";
-
 const cardsData = [
   {
     id: 1,
@@ -85,32 +85,31 @@ const PaginatedCards = () => {
 
   const progressPercentage = ((currentCardIndex + 1) / cardsData.length) * 100;
   return (
-    <div className="min-h-screen bg-gradient-to-r from-yellow-100 via-pink-300 to-purple-200 flex items-center justify-center py-8 px-4">
-      <div className=" w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w- bg-white rounded-lg shadow-lg my-6 p-3">
+    <div className="paginationCard-main  flex items-center justify-center py-8 px-4">
+      <div className="Quiz_Card w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w- bg-white rounded-lg shadow-lg my-6 p-3">
         {/* Card Content */}
-        <h1 className="text-2xl font-medium text-gray-800 leading-tight mx-4">
+        <h1 className="Quiz-title text-4xl font-medium text-gray-800 leading-tight mx-4">
           {cardsData[currentCardIndex].title}
         </h1>
-
-        <div className="w-full bg-gray-300 rounded-full h-4 mb-6 mt-2  ">
+        <div className="w-full bg-gray-300 rounded-full h-6 mb-6 mt-2  ">
           <div
-            className="bg-purple-500 h-4 rounded-full bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400"
+            className="bg-purple-500 h-6 rounded-full bg-gradient-to-l from-yellow-400 via-pink-400 to-purple-400"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
-        <p className="mt-4 text-black-400 font-bold  mx-4">
+        <p className="Quiz-description mt-4 text-3xl text-black-400 font-medium mx-6">
           {cardsData[currentCardIndex].description}
         </p>
-        <p className="mt-2 text-gray-500 text-sm mx-4">
+        <p className="Quiz-subText mt-2 text-gray-500 text-x1 mx-4">
           {cardsData[currentCardIndex].subText}
         </p>
         {/* Options */}
-        <div className="mt-4 space-y-4">
+        <div className="mt-4 space-y-4 Quiz-options-div">
           {cardsData[currentCardIndex].options.map((option, index) => (
             <button
               key={index}
               onClick={() => handleOptionSelect(option)}
-              className={`w-full px-6 py-3 text-center font-medium rounded-lg border-2 relative  ${
+              className={`Quiz-option w-full px-8 py-6 text-center text-3x1 font-medium rounded-lg border-2 relative  ${
                 selectedOption === option
                   ? checkAnswer()
                     ? "bg-green-500 text-white"
@@ -121,7 +120,7 @@ const PaginatedCards = () => {
             >
               <input
                 type="radio"
-                className="absolute left-4 mr-3 h-5 w-5 text-purple-500 border-gray-300 text-left  focus:ring-purple-500"
+                className="Quiz-option-radioBtn absolute left-4 mr-3 h-5 w-5 text-x1 text-purple-500 border-gray-300 text-left  focus:ring-purple-500"
                 checked={selectedOption === option}
                 readOnly
               />
@@ -130,7 +129,9 @@ const PaginatedCards = () => {
           ))}
         </div>
         {/* Navigation Buttons */}
-        <div className="mt-6 flex justify-between">
+
+        <hr className="mt-8" />
+        <div className="Quiz-Navigation-Btn mt-6 flex justify-between">
           <button
             onClick={handlePrevious}
             disabled={currentCardIndex === 0}

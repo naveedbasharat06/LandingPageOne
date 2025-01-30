@@ -6,13 +6,21 @@ import PaginatedCards from "./pages/QuizPagination";
 import Header1 from "./pages/Header1";
 import { useState } from "react";
 function App() {
+  // State to track which component to display
+  const [selectedComponent, setSelectedComponent] = useState("Header1");
+  const showPaginationCards = () => {
+    setSelectedComponent("PaginatedCards");
+  };
   return (
-    <>
-      <Header1 />
+    <div className="App mx-auto">
+      {selectedComponent === "Header1" && (
+        <Header1 onGenderSelect={showPaginationCards} />
+      )}
+      {selectedComponent === "PaginatedCards" && <PaginatedCards />}
       {/* <Header /> */}
       {/* <PaginatedCards /> */}
       {/* <PercentageProgCard /> */}
-    </>
+    </div>
   );
 }
 
