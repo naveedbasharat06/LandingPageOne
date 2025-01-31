@@ -5,12 +5,8 @@
 }
 .App {
   max-width: 1920px;
-  /* position: relative; */
   height: 1080px;
-  /* overflow: hidden; */
-  /* top: 0%; */
-  /* bottom: 0%; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Jost" !important;
   background-image: url("./pages/images/Rectangle.png");
   background-repeat: no-repeat;

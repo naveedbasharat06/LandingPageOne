@@ -783,8 +783,8 @@
     position: relative;
     width: 390px;
     height: 844px;
-    top: 0%;
-    bottom: 0%;
+    /* top: 0%; */
+    /* bottom: 0%; */
 
     overflow: hidden; /* Ensure no overflow issues */
     /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */

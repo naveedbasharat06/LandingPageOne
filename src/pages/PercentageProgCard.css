@@ -1,0 +1,52 @@
+.PercentageCard-main {
+  display: flex;
+}
+.percentageLeft-text {
+  /* width: 834px; */
+  margin-top: 206px;
+  margin-left: 110px;
+}
+.percentageLeft-text h1 {
+  font-size: 46px;
+  width: 834px;
+
+  margin-bottom: 32px;
+  line-height: 4rem;
+}
+.percentageLeft-text p {
+  font-size: 38px;
+  width: 690px;
+
+  margin-bottom: 110px;
+  line-height: 2.3rem;
+}
+.ProgressCircle-Percentage {
+  position: relative;
+  top: 2%;
+  left: 10%;
+  width: 240px;
+  height: 240px;
+}
+.ProgressCircle-Content {
+  background-color: rgb(170, 216, 210);
+}
+.ProgressCircle-Content {
+  /* text-align: center; */
+}
+.progress-font {
+  font-size: 60px;
+  font-family: "Encode Sans Condensed", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.ProgressCircle-Image-div {
+}
+#ProgressCircle-Image {
+  position: absolute;
+  top: 10%;
+  /* left: 20%; */
+  bottom: 10%;
+  right: 12%;
+  width: 1350px;
+  height: 900px;
+}

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./QuizPagination.css";
-// import headerImg01 from "../pages/images/headerImg01.png";
-// import MAYCLINIC from "../pages/images/mayoC.png";
-// import Vector from "../pages/images/Vector.png";
-// import VOGUF from "../pages/images/VOGUF.png";
-// import WallStreatJ from "../pages/images/wallstreetJ.png";
-// import WHLogo from "../pages/images/WHLogo.png";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
+import { AnimatePresence } from "motion/react";
+import * as motion from "motion/react-client";
 const cardsData = [
   {
     id: 1,
@@ -44,9 +43,9 @@ const cardsData = [
   },
   {
     id: 4,
-    title: "The ability to maintain equilibrium when staonary or moving:",
+    title: "The ability to maintain equilibrium when stationary or moving:",
     description:
-      "The ability to maintain equilibrium when staonary or moving:",
+      "The ability to maintain equilibrium when stationary or moving:",
     subText: "(Knowing basic web terms can help you in development).",
     options: ["Accuracy", "Flexibility", "Balance", "Agility"],
     correct: "Balance",
@@ -84,78 +83,83 @@ const PaginatedCards = () => {
   };
 
   const progressPercentage = ((currentCardIndex + 1) / cardsData.length) * 100;
-  return (
-    <div className="paginationCard-main  flex items-center justify-center py-8 px-4">
-      <div className="Quiz_Card w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w- bg-white rounded-lg shadow-lg my-6 p-3">
-        {/* Card Content */}
-        <h1 className="Quiz-title text-4xl font-medium text-gray-800 leading-tight mx-4">
-          {cardsData[currentCardIndex].title}
-        </h1>
-        <div className="w-full bg-gray-300 rounded-full h-6 mb-6 mt-2  ">
-          <div
-            className="bg-purple-500 h-6 rounded-full bg-gradient-to-l from-yellow-400 via-pink-400 to-purple-400"
-            style={{ width: `${progressPercentage}%` }}
-          ></div>
-        </div>
-        <p className="Quiz-description mt-4 text-3xl text-black-400 font-medium mx-6">
-          {cardsData[currentCardIndex].description}
-        </p>
-        <p className="Quiz-subText mt-2 text-gray-500 text-x1 mx-4">
-          {cardsData[currentCardIndex].subText}
-        </p>
-        {/* Options */}
-        <div className="mt-4 space-y-4 Quiz-options-div">
-          {cardsData[currentCardIndex].options.map((option, index) => (
-            <button
-              key={index}
-              onClick={() => handleOptionSelect(option)}
-              className={`Quiz-option w-full px-8 py-6 text-center text-3x1 font-medium rounded-lg border-2 relative  ${
-                selectedOption === option
-                  ? checkAnswer()
-                    ? "bg-green-500 text-white"
-                    : "bg-red-500 text-white"
-                  : "bg-white text-gray-800 hover:bg-gray-100"
-              }`}
-              disabled={answered}
-            >
-              <input
-                type="radio"
-                className="Quiz-option-radioBtn absolute left-4 mr-3 h-5 w-5 text-x1 text-purple-500 border-gray-300 text-left  focus:ring-purple-500"
-                checked={selectedOption === option}
-                readOnly
-              />
-              {option}
-            </button>
-          ))}
-        </div>
-        {/* Navigation Buttons */}
 
-        <hr className="mt-8" />
-        <div className="Quiz-Navigation-Btn mt-6 flex justify-between">
-          <button
-            onClick={handlePrevious}
-            disabled={currentCardIndex === 0}
-            className={`px-4 py-2 text-white font-medium rounded-lg ${
-              currentCardIndex === 0
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-purple-500 hover:bg-purple-600"
-            }`}
-          >
-            ◀
-          </button>
-          {`${currentCardIndex + 1} / ${cardsData.length}`}
-          <button
-            onClick={handleNext}
-            disabled={currentCardIndex === cardsData.length - 1}
-            className={`px-4 py-2 text-white font-medium rounded-lg ${
-              currentCardIndex === cardsData.length - 1
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-purple-500 hover:bg-purple-600"
-            }`}
-          >
-            ▶
-          </button>
-        </div>
+  return (
+    <div className="main-container">
+      <div className="paginationCard-main  flex items-center justify-center">
+        <AnimatePresence>
+          <div className="Quiz_Card w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w- bg-white rounded-lg shadow-lg my-6 p-3">
+            {/* Card Content */}
+
+            <h1 className="Quiz-title  text-gray-800 leading-tight">
+              {cardsData[currentCardIndex].title}
+            </h1>
+            <div className="Quiz-progress-bar bg-gray-300 rounded-full h-5  ">
+              <div
+                className={` bg-purple-500 h-5 rounded-l-lg bg-gradient-to-l from-yellow-400 via-pink-400 to-purple-400 ${
+                  progressPercentage === 100 ? "rounded-r-lg" : ""
+                }`}
+                style={{ width: `${progressPercentage}%` }}
+              ></div>
+            </div>
+            <p className="Quiz-description text-black-400 font-medium ">
+              {cardsData[currentCardIndex].description}
+            </p>
+            <p className="Quiz-subText mt-2 text-gray-500 text-x1 mx-4">
+              {cardsData[currentCardIndex].subText}
+            </p>
+            {/* Options */}
+            <div className="mt-4 space-y-6 Quiz-options-div">
+              {cardsData[currentCardIndex].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleOptionSelect(option)}
+                  className={`Quiz-option text-center font-medium rounded-lg border-2 relative  ${
+                    selectedOption === option
+                      ? checkAnswer()
+                        ? "bg-green-400 text-white"
+                        : "bg-pink-400 text-white"
+                      : "bg-white text-gray-800 hover:bg-gray-100"
+                  }`}
+                  disabled={answered}
+                >
+                  <input
+                    type="radio"
+                    className="Quiz-option-radioBtn absolute left-4 mr-3 h-6 w-5  text-purple-900 border-gray-300 text-left  focus:ring-purple-500"
+                    checked={selectedOption === option}
+                    readOnly
+                  />
+                  {option}
+                </button>
+              ))}
+            </div>
+            <hr className="custom-hr" />
+            {/* Navigation Buttons */}
+            <div className="Quiz-Navigation-Btn mt-8 flex justify-between">
+              <button
+                onClick={handlePrevious}
+                disabled={currentCardIndex === 0}
+                className={`px-4 py-2 text-black font-medium rounded-lg ${
+                  currentCardIndex === 0 ? "bg-red-200 cursor-not-allowed" : ""
+                }`}
+              >
+                <SlArrowLeft style={{ fontSize: "20px" }} />
+              </button>
+              {`${currentCardIndex + 1} / ${cardsData.length}`}
+              <button
+                onClick={handleNext}
+                disabled={currentCardIndex === cardsData.length - 1}
+                className={`px-4 py-2 text-black font-medium rounded-lg ${
+                  currentCardIndex === cardsData.length - 1
+                    ? "bg-red-200 cursor-not-allowed"
+                    : ""
+                }`}
+              >
+                <SlArrowRight style={{ fontSize: "20px" }} />
+              </button>
+            </div>
+          </div>
+        </AnimatePresence>
       </div>
     </div>
   );
