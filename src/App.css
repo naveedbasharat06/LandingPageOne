@@ -14,3 +14,66 @@
   background-size: cover;
   background-position: center;
 }
+@media only screen and (max-width: 1680px) {
+  .App {
+    max-width: 1680px;
+    height: 1080px;
+    /* box-sizing: border-box; */
+    font-family: "Jost" !important;
+    background-image: url("./pages/images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .App {
+    max-width: 1440px;
+    height: 900px;
+    /* box-sizing: border-box; */
+    /* font-family: "Jost" !important;
+    background-image: url("./pages/images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; */
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .App {
+    max-width: 1280px;
+    height: 900px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .App {
+    max-width: 960px;
+    height: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    max-width: 768px;
+    height: 1080px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .App {
+    max-width: 568px;
+    height: 844px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .App {
+    max-width: 425px;
+    height: 844px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .App {
+    max-width: 390px;
+    height: 844px;
+  }
+}

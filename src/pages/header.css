@@ -67,11 +67,13 @@
   padding: 0 196px; /* Add left and right spacing */
   gap: 1rem; /* Add spacing between logos */
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   left: 0;
   right: 0;
 }
-
+.logo-item {
+  height: 40px;
+}
 #WHLogo {
   width: 194.93px;
 }
@@ -80,6 +82,7 @@
 }
 #MAYCLINIC {
   width: 58px;
+  height: auto !important;
 }
 #WallStreatJ {
   width: 353px;
@@ -781,7 +784,7 @@
 @media (max-width: 390px) {
   .header-container {
     position: relative;
-    width: 390px;
+    max-width: 390px;
     height: 844px;
     /* top: 0%; */
     /* bottom: 0%; */
@@ -796,7 +799,7 @@
   .context-container {
     margin-top: -10px;
     margin-left: -15px;
-    width: 358px;
+    width: 100%;
     z-index: 1;
     align-items: center;
     justify-content: center;
@@ -807,7 +810,7 @@
     /* margin-right: 23px; */
     flex-direction: column;
     bottom: 23%;
-    width: 345px;
+    width: 100%;
     height: 144px;
   }
   .headerImg-div {
@@ -832,7 +835,7 @@
   .responsive-heading {
     /* Adjust to control character wrapping */
     line-height: 1.1; /* Tighter line spacing */
-    width: 358px;
+    width: 100%;
     text-align: start;
     font-size: 40px;
     font-weight: 500;

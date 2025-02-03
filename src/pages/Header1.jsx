@@ -18,7 +18,7 @@ const Header1 = ({ onGenderSelect }) => {
     onGenderSelect();
   };
   return (
-    <div className="header-container  mx-auto">
+    <div className="header-container mx-auto">
       {/* Header Section */}
 
       <div className="contextAndHeaderImage_div">
