@@ -1,5 +1,6 @@
 .paginationCard-main {
-  background-image: url("");
+  /* background-image: url(""); */
+  /* border: 1px solid black; */
 }
 .Quiz_Card {
   max-width: 834px;
@@ -15,16 +16,17 @@
 .Quiz-title {
   font-size: 38px;
   width: 100%;
-  padding: 40px 52px 0px 52px;
+  padding: 28px 40px 0px 40px;
   text-align: center;
   font-weight: 400;
+  line-height: 120%;
 }
 .Quiz-description {
   font-size: 28px;
   margin: 32px 52px 0px 52px;
 }
 .Quiz-progress-bar {
-  margin: 10px 52px 32px 52px;
+  margin: 10px 40px 32px 40px;
 }
 .Quiz-subText {
   font-size: 20px;
@@ -45,6 +47,11 @@
   width: 582px;
   height: 72px;
   border-radius: 12px;
+
+  /* border: 1px solid #1e1e1e; */
+}
+.customBtnStyle {
+  background-color: #e9639f;
 }
 .Quiz-option-radioBtn {
   font-size: 20px;
@@ -67,7 +74,164 @@ input[type="radio"]:checked {
 .custom-hr {
   margin: 60px 30px 15px 30px;
 }
+.Quiz-Navigation-Btn {
+  margin-bottom: 12px;
+}
+
 /* Media Query */
+@media only screen and (max-width: 1880px) {
+  .Quiz-options-div {
+    position: relative;
+    width: 730px;
+    top: 0px;
+    left: 0px;
+    right: 52px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .paginationCard-main {
+    /* background-image: url(""); */
+  }
+  .Quiz_Card {
+    max-width: 834px;
+    /* max-height: 698px; */
+    max-height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 180px 530px;
+    /* margin-top: 132px; */
+    border-radius: 30px;
+  }
+
+  .Quiz-title {
+    font-size: 38px;
+    width: 100%;
+    padding: 40px 52px 0px 52px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .Quiz-description {
+    font-size: 28px;
+    margin: 32px 52px 0px 52px;
+  }
+  .Quiz-progress-bar {
+    margin: 10px 52px 32px 52px;
+  }
+  .Quiz-subText {
+    font-size: 20px;
+    margin: 0px 52px;
+    margin-bottom: 32px;
+  }
+  .Quiz-options-div {
+    position: relative;
+    width: 730px;
+    top: 0px;
+    left: 0px;
+    right: 52px;
+    align-items: center;
+    justify-items: center;
+  }
+  .Quiz-option {
+    font-size: 20px;
+    width: 582px;
+    height: 72px;
+    border-radius: 12px;
+  }
+  .Quiz-option-radioBtn {
+    font-size: 20px;
+  }
+  input[type="radio"] {
+    accent-color: white;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked {
+    background-color: white;
+    border: none;
+  }
+  .custom-hr {
+    margin: 60px 30px 15px 30px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .paginationCard-main {
+    /* background-image: url(""); */
+  }
+  .Quiz_Card {
+    max-width: 834px;
+    /* max-height: 698px; */
+    max-height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 180px 530px;
+    /* margin-top: 132px; */
+    border-radius: 30px;
+  }
+
+  .Quiz-title {
+    font-size: 38px;
+    width: 100%;
+    padding: 28px 40px 0px 40px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .Quiz-description {
+    font-size: 28px;
+    margin: 32px 52px 0px 52px;
+  }
+  .Quiz-progress-bar {
+    margin: 10px 40px 32px 40px;
+  }
+  .Quiz-subText {
+    font-size: 20px;
+    margin: 0px 52px;
+    margin-bottom: 32px;
+  }
+  .Quiz-options-div {
+    position: relative;
+    width: 730px;
+    top: 0px;
+    left: 0px;
+    right: 52px;
+    align-items: center;
+    justify-items: center;
+  }
+  .Quiz-option {
+    font-size: 20px;
+    width: 582px;
+    height: 72px;
+    border-radius: 12px;
+  }
+  .Quiz-option-radioBtn {
+    font-size: 20px;
+  }
+  input[type="radio"] {
+    accent-color: white;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked {
+    background-color: white;
+    border: none;
+  }
+  .custom-hr {
+    margin: 60px 30px 15px 30px;
+  }
+}
 /* For Mobile Device 768px smaller */
 @media only screen and (max-width: 768px) {
   .main-container {
@@ -110,7 +274,7 @@ input[type="radio"]:checked {
     right: 0px;
     align-items: center;
     justify-items: center;
-    margin: 32px 0px;
+    margin: 16px 0px;
   }
   .Quiz-option {
     font-size: 18px;
@@ -124,29 +288,122 @@ input[type="radio"]:checked {
     margin: 60px 20px 15px 20px;
   }
 }
-/* mobile smaller then 390px */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 425px) {
   .main-container {
-    margin: 0px 16px;
+    /* margin: 0px 16px; */
   }
   .paginationCard-main {
   }
   .Quiz_Card {
-    margin: 64px 16p;
+    margin: 72px 16px;
   }
   .Quiz-title {
     font-size: 28px;
-    width: 100%;
-    padding: 16px 0px 0px 0px;
+    width: 365px;
+    padding: 8px 0px 0px 0px;
     /* text-align: center; */
     color: #1e1e1e;
   }
   .Quiz-description {
     font-size: 22px;
-    margin: 15px 16px 0px 16px;
+    margin: 0px;
   }
   .Quiz-progress-bar {
-    margin: 10px 16px 20px 16px;
+    margin: 16px 8px 32px 8px;
+  }
+  .Quiz-subText {
+    font-size: 18px;
+    margin: 0px 16px;
+    margin-bottom: 32px;
+  }
+  .Quiz-options-div {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    justify-items: center;
+    margin: 32px 0px;
+  }
+  .Quiz-option {
+    font-size: 18px;
+    width: 100%;
+    height: 64px;
+  }
+  .Quiz-option-radioBtn {
+    font-size: 20px;
+  }
+}
+/* mobile smaller then 390px */
+@media only screen and (max-width: 390px) {
+  .main-container {
+    /* margin: 0px 16px; */
+  }
+  .paginationCard-main {
+  }
+  .Quiz_Card {
+    margin: 72px 16px;
+  }
+  .Quiz-title {
+    font-size: 28px;
+    width: 326px;
+    padding: 8px 0px 0px 0px;
+    /* text-align: center; */
+    color: #1e1e1e;
+  }
+  .Quiz-description {
+    font-size: 22px;
+    margin: 0px;
+  }
+  .Quiz-progress-bar {
+    margin: 16px 8px 32px 8px;
+  }
+  .Quiz-subText {
+    font-size: 18px;
+    margin: 0px 4px 32px 4px;
+  }
+  .Quiz-options-div {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    justify-items: center;
+    margin: 32px 0px;
+  }
+  .Quiz-option {
+    font-size: 18px;
+    width: 100%;
+    height: 64px;
+  }
+  .Quiz-option-radioBtn {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main-container {
+    /* margin: 0px 16px; */
+  }
+  .paginationCard-main {
+  }
+  .Quiz_Card {
+    margin: 72px 16p;
+  }
+  .Quiz-title {
+    font-size: 24px;
+    width: 280px;
+    padding: 8px 0px 0px 0px;
+    /* text-align: center; */
+    color: #1e1e1e;
+  }
+  .Quiz-description {
+    font-size: 22px;
+    margin: 0px;
+  }
+  .Quiz-progress-bar {
+    margin: 16px 8px 32px 8px;
   }
   .Quiz-subText {
     font-size: 18px;
