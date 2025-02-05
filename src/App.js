@@ -8,8 +8,12 @@ import * as motion from "motion/react-client";
 function App() {
   // State to track which component to display
   const [selectedComponent, setSelectedComponent] = useState("Header1");
+  const [quizCompleted, setQuizCompleted] = useState(false);
   const showPaginationCards = () => {
     setSelectedComponent("PaginatedCards");
+  };
+  const handleQuizCompletion = () => {
+    setQuizCompleted(true);
   };
   return (
     <>
@@ -28,20 +32,34 @@ function App() {
           )}
           {selectedComponent === "PaginatedCards" && (
             <motion.div
-              key={PaginatedCards}
+              key={"PaginatedCards"}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 1, x: -100 }}
               transition={{ duration: 1 }}
             >
-              <PaginatedCards />
+              {!quizCompleted && (
+                <PaginatedCards onComplete={handleQuizCompletion} />
+              )}
+            </motion.div>
+          )}
+          {quizCompleted && (
+            <motion.div
+              key="PercentageProgCard"
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 2 }}
+            >
+              <PercentageProgCard />
             </motion.div>
           )}
         </AnimatePresence>
-        {/* <br /> */}
-        {/* <PercentageProgCard /> */}
       </div>
+      {/* <PercentageProgCard /> */}
     </>
   );
 }
 export default App;
+// https://www.npmjs.com/package/react-circular-progressbar
+// https://codesandbox.io/p/sandbox/react-circular-progress-bar-pxepje?file=%2Fsrc%2FApp.js%3A10%2C30

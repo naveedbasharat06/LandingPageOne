@@ -7,41 +7,51 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  margin-top: 30px;
+  /* // */
+  position: relative;
+
+  overflow: hidden;
+  top: 0%;
+  bottom: 0%;
+  box-sizing: border-box;
 }
 .PercentageCard {
   display: flex;
+  /* flex-direction: row; */
 }
 .percentageLeft-text {
-  /* width: 834px; */
-  flex: 1;
+  width: 834px;
+  /* flex: 1; */
   margin-top: 206px;
   margin-left: 110px;
 }
 .percentageLeft-text h1 {
   font-size: 46px;
-  /* width: 834px; */
-  max-width: 90%;
+  width: 834px;
+  /* max-width: 90%; */
   margin-bottom: 32px;
-  line-height: 4rem;
+  line-height: 120%;
 }
 .percentageLeft-text p {
   font-size: 38px;
   width: 690px;
-  line-height: 2.4rem;
+  line-height: 120%;
   margin-bottom: 100px;
+}
+.progressCircle-color {
+  color: #3eb8e5;
 }
 .ProgressCircle-Percentage {
   position: relative;
   top: 0%;
-  left: 10%;
-  width: 240px;
-  height: 240px;
+  left: 15%;
+  width: 246px;
+  height: 246px;
 }
 .ProgressCircle-Content {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 50%;
-  padding: 56px;
+  padding: 0px;
   text-align: center;
   margin: 11px;
   white-space: nowrap;
@@ -51,52 +61,63 @@
 .ProgressCircle-Content {
   /* text-align: center; */
 }
+.percentage-sign {
+  font-size: 33px;
+  font-weight: 500;
+}
 .progress-font {
   font-family: "Encode Sans Condensed", serif;
   font-weight: 800;
-  font-style: normal;
-  font-size: 30px;
-  font-size: 40px;
-  display: inline-block;
+  font-size: 72px;
 }
 .ProgressCircle-Image-div {
-  width: 100%;
+  /* width: 100%; */
 }
-#ProgressCircle-Image {
-  position: relative;
-  top: 10%;
-  left: 0%;
+.ProgressCircle-Image {
+  position: absolute;
+  top: 7%;
+  left: 38%;
   bottom: 10%;
-  /* right: 57%; */
-  width: 1350px;
-  height: 800px;
+  /* right: 18%; */
+  width: 1263px;
+  /* height: 800px; */
+  /* overflow: hidden; */
+  /* bottom: 0%; */
 }
 /* Media Query */
 @media only screen and (max-width: 1680px) {
   .percentageCard-main {
     max-width: 1680px;
-    height: 1020px;
+    height: 1050px;
     font-family: "Jost" !important;
     background-image: url("./images/Rectangle.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 50px;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: row; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
+    width: 834px;
+    /* flex: 1; */
     margin-top: 206px;
     margin-left: 110px;
   }
   .percentageLeft-text h1 {
     font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
+    width: 834px;
+    /* max-width: 90%; */
     margin-bottom: 32px;
     line-height: 4rem;
   }
@@ -106,17 +127,20 @@
     line-height: 2.4rem;
     margin-bottom: 100px;
   }
+  .progressCircle-color {
+    color: #3eb8e5;
+  }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
     left: 15%;
-    width: 240px;
-    height: 240px;
+    width: 246px;
+    height: 246px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
     margin: 11px;
     white-space: nowrap;
@@ -126,25 +150,28 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 72px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
+  .ProgressCircle-Image {
+    position: absolute;
     top: 10%;
-    left: 0%;
+    left: 40%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    width: 68%;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -157,40 +184,51 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: row; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 130px;
-    margin-left: 80px;
+    width: 834px;
+    /* flex: 1; */
+    margin-top: 206px;
+    margin-left: 110px;
   }
   .percentageLeft-text h1 {
     font-size: 46px;
-    width: 580px;
+    width: 834px;
     /* max-width: 90%; */
     margin-bottom: 32px;
-    line-height: 4rem;
+    line-height: 120%;
   }
   .percentageLeft-text p {
     font-size: 38px;
     width: 690px;
-    line-height: 2.4rem;
+    line-height: 120%;
     margin-bottom: 100px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 14%;
-    width: 240px;
-    height: 240px;
+    left: 15%;
+    width: 246px;
+    height: 246px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 54px;
+    padding: 0px;
     text-align: center;
     margin: 11px;
     white-space: nowrap;
@@ -200,71 +238,86 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 72px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 4%;
-    left: 0%;
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 15%;
+    left: 46%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    width: 65%;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
 @media (max-width: 1280px) {
   .percentageCard-main {
     max-width: 1280px;
-    height: 900px;
+    height: 800px;
     font-family: "Jost" !important;
     background-image: url("./images/Rectangle.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: row; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 140px;
-    margin-left: 75px;
+    width: 834px;
+    /* flex: 1; */
+    margin-top: 117px;
+    margin-left: 70px;
   }
   .percentageLeft-text h1 {
-    font-size: 46px;
-    width: 843px;
+    font-size: 45px;
+    width: 777px;
     /* max-width: 90%; */
     margin-bottom: 32px;
-    line-height: 4rem;
+    line-height: 120%;
   }
   .percentageLeft-text p {
-    font-size: 37px;
+    font-size: 38px;
     width: 690px;
-    line-height: 2.4rem;
+    line-height: 120%;
     margin-bottom: 100px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 19%;
-    width: 240px;
-    height: 240px;
+    left: 15%;
+    width: 246px;
+    height: 246px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
     margin: 11px;
     white-space: nowrap;
@@ -274,81 +327,176 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 72px;
   }
   .ProgressCircle-Image-div {
     /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    /* position: relative;
-    top: 10%;
-
-    right: 4%;
-    width: 1350px;
-    height: 800px; */
-    /* position: relative; */
+  .ProgressCircle-Image {
     position: absolute;
-    /* z-index: -1; */
-    width: 83%;
-    height: 80%;
-    /* transition: transform 0.3s ease-in-out; */
-    /* right: 14%; */
-    top: 90%;
+    top: 6%;
+    left: 46%;
+    bottom: 10%;
+    /* right: 18%; */
+    width: 69%;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
+  }
+}
+@media (max-width: 1024px) {
+  .percentageCard-main {
+    max-width: 1024px;
+    height: 600px;
+    font-family: "Jost" !important;
+    background-image: url("./images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
     bottom: 0%;
-    left: 61%;
-    margin-bottom: 6%;
+    box-sizing: border-box;
+  }
+  .PercentageCard {
+    display: flex;
+    /* flex-direction: row; */
+  }
+  .percentageLeft-text {
+    width: 834px;
+    /* flex: 1; */
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  .percentageLeft-text h1 {
+    font-size: 38px;
+    width: 685px;
+    /* max-width: 90%; */
+    margin-bottom: 20px;
+    line-height: 120%;
+  }
+  .percentageLeft-text p {
+    font-size: 30px;
+    width: 560px;
+    line-height: 120%;
+
+    margin-bottom: 90px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
+  }
+  .ProgressCircle-Percentage {
+    position: relative;
+    top: 0%;
+    left: 15%;
+    width: 246px;
+    height: 246px;
+  }
+  .ProgressCircle-Content {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0px;
+    text-align: center;
+    margin: 11px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #409cd1;
+  }
+  .ProgressCircle-Content {
+    /* text-align: center; */
+  }
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
+  }
+  .progress-font {
+    font-family: "Encode Sans Condensed", serif;
+    font-weight: 800;
+    font-size: 72px;
+  }
+  .ProgressCircle-Image-div {
+    /* width: 100%; */
+  }
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 0%;
+    left: 42%;
+    bottom: 10%;
+    /* right: 18%; */
+    width: 76%;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
 @media (max-width: 960px) {
   .percentageCard-main {
     max-width: 960px;
-    height: 844px;
+    height: 600px;
     font-family: "Jost" !important;
     background-image: url("./images/Rectangle.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: row; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 74px;
-    margin-left: 42px;
+    width: 834px;
+    /* flex: 1; */
+    margin-top: 60px;
+    margin-left: 30px;
   }
   .percentageLeft-text h1 {
-    font-size: 40px;
-    /* width: 834px; */
-    /* max-width: 90%;/ */
-    margin-bottom: 32px;
-    line-height: 4rem;
-  }
-  .percentageLeft-text p {
     font-size: 35px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
+    width: 630px;
+    /* max-width: 90%; */
+    margin-bottom: 20px;
+    line-height: 120%;
+  }
+  .percentageLeft-text p {
+    font-size: 30px;
+    width: 550px;
+    line-height: 120%;
+    margin-bottom: 70px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
+    left: 8%;
+    width: 246px;
+    height: 246px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
     margin: 11px;
     white-space: nowrap;
@@ -358,25 +506,28 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 72px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
+  .ProgressCircle-Image {
+    position: absolute;
+    top: -1%;
+    left: 31%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    width: 89%;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
 @media (max-width: 768px) {
@@ -389,42 +540,57 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: column; */
+    /* display: flex;
+    flex-wrap: wrap; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
+    width: auto;
+    /* flex: 1; */
+    margin-top: 60px;
+    margin-left: 74px;
   }
   .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
+    font-size: 34px;
+    /* width: 630px; */
+    /* max-width: 90%; */
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 500 !important;
   }
   .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
+    font-size: 30px;
+    width: 550px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
+    left: 24%;
+    width: 246px;
+    height: 246px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
-    margin: 11px;
+    margin: 0px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -432,101 +598,31 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
-  .progress-font {
-    font-family: "Encode Sans Condensed", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
-  }
-  .ProgressCircle-Image-div {
-    width: 100%;
-  }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
-    bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
-  }
-}
-@media (max-width: 768px) {
-  .percentageCard-main {
-    max-width: 768px;
-    height: 844px;
-    font-family: "Jost" !important;
-    background-image: url("./images/Rectangle.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  .PercentageCard {
-    display: flex;
-  }
-  .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
-  }
-  .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
-  }
-  .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
-  }
-  .ProgressCircle-Percentage {
-    position: relative;
-    top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
-  }
-  .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 56px;
-    text-align: center;
-    margin: 11px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #409cd1;
-  }
-  .ProgressCircle-Content {
-    /* text-align: center; */
+  .percentage-sign {
+    font-size: 33px;
+    font-weight: 500;
   }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 72px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 54%;
+    left: 18%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    width: 536px;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
+
 @media (max-width: 568px) {
   .percentageCard-main {
     max-width: 568px;
@@ -537,42 +633,57 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: column; */
+    /* display: flex;
+    flex-wrap: wrap; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
+    width: 358px;
+    /* flex: 1; */
+    margin-top: 70px;
+    margin-left: 30px;
   }
   .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
+    font-size: 34px;
+    width: 425px;
+
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 500 !important;
   }
   .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
+    font-size: 30px;
+    width: 460px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
+    left: 24%;
+    width: 198px;
+    height: 198px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
-    margin: 11px;
+    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -580,101 +691,31 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
-  .progress-font {
-    font-family: "Encode Sans Condensed", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
-  }
-  .ProgressCircle-Image-div {
-    width: 100%;
-  }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
-    bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
-  }
-}
-@media (max-width: 568px) {
-  .percentageCard-main {
-    max-width: 568px;
-    height: 844px;
-    font-family: "Jost" !important;
-    background-image: url("./images/Rectangle.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  .PercentageCard {
-    display: flex;
-  }
-  .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
-  }
-  .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
-  }
-  .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
-  }
-  .ProgressCircle-Percentage {
-    position: relative;
-    top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
-  }
-  .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 56px;
-    text-align: center;
-    margin: 11px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #409cd1;
-  }
-  .ProgressCircle-Content {
-    /* text-align: center; */
+  .percentage-sign {
+    font-size: 28.7px;
+    font-weight: 500;
   }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 63.2px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 54%;
+    left: 18%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    width: 536px;
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
+
 @media (max-width: 425px) {
   .percentageCard-main {
     max-width: 425px;
@@ -685,42 +726,55 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: column; */
+    /* display: flex;
+    flex-wrap: wrap; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
+    /* width: 358px; */
+    /* flex: 1; */
+    margin: 60px 16px 0px 16px;
   }
   .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
+    font-size: 34px;
+    width: 358px;
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 500 !important;
   }
   .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
+    font-size: 22px;
+    width: 358px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
+    left: 23%;
+    width: 198px;
+    height: 198px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
-    margin: 11px;
+    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -728,25 +782,27 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 28.7px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 63.2px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
-    position: relative;
-    top: 10%;
-    left: 0%;
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 58%;
+    left: 4%;
     bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+    /* right: 18%; */
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }
 @media (max-width: 390px) {
@@ -759,42 +815,55 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    margin-top: 100px;
+    /* // */
+    position: relative;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
   }
   .PercentageCard {
     display: flex;
+    /* flex-direction: column; */
+    /* display: flex;
+    flex-wrap: wrap; */
   }
   .percentageLeft-text {
-    /* width: 834px; */
-    flex: 1;
-    margin-top: 206px;
-    margin-left: 110px;
+    /* width: 358px; */
+    /* flex: 1; */
+    margin: 60px 16px 0px 16px;
   }
   .percentageLeft-text h1 {
-    font-size: 46px;
-    /* width: 834px; */
-    max-width: 90%;
-    margin-bottom: 32px;
-    line-height: 4rem;
+    font-size: 34px;
+    /* width: 358px; */
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 500 !important;
   }
   .percentageLeft-text p {
-    font-size: 38px;
-    width: 690px;
-    line-height: 2.4rem;
-    margin-bottom: 100px;
+    font-size: 22px;
+    /* width: 358px; */
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
   }
   .ProgressCircle-Percentage {
     position: relative;
     top: 0%;
-    left: 10%;
-    width: 240px;
-    height: 240px;
+    left: 18%;
+    width: 198px;
+    height: 198px;
   }
   .ProgressCircle-Content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 56px;
+    padding: 0px;
     text-align: center;
-    margin: 11px;
+    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -802,24 +871,115 @@
   .ProgressCircle-Content {
     /* text-align: center; */
   }
+  .percentage-sign {
+    font-size: 28.7px;
+    font-weight: 500;
+  }
   .progress-font {
     font-family: "Encode Sans Condensed", serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 30px;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 63.2px;
   }
   .ProgressCircle-Image-div {
-    width: 100%;
+    /* width: 100%; */
   }
-  #ProgressCircle-Image {
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    /* bottom: 10%; */
+    /* right: 18%; */
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
+  }
+}
+@media (max-width: 330px) {
+  .percentageCard-main {
+    max-width: 330px;
+    height: 844px;
+    font-family: "Jost" !important;
+    background-image: url("./images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    /* // */
     position: relative;
-    top: 10%;
-    left: 0%;
-    bottom: 10%;
-    /* right: 57%; */
-    width: 1350px;
-    height: 800px;
+
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    box-sizing: border-box;
+  }
+  .PercentageCard {
+    display: flex;
+    /* flex-direction: column; */
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+  .percentageLeft-text {
+    /* width: 358px; */
+    /* flex: 1; */
+    margin: 60px 16px 0px 16px;
+  }
+  .percentageLeft-text h1 {
+    font-size: 32px;
+    /* width: 358px; */
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 500 !important;
+  }
+  .percentageLeft-text p {
+    font-size: 22px;
+    /* width: 358px; */
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  .progressCircle-color {
+    color: #3eb8e5;
+  }
+  .ProgressCircle-Percentage {
+    position: relative;
+    top: 0%;
+    left: 18%;
+    width: 198px;
+    height: 198px;
+  }
+  .ProgressCircle-Content {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0px;
+    text-align: center;
+    margin: 9px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #409cd1;
+  }
+  .ProgressCircle-Content {
+    /* text-align: center; */
+  }
+  .percentage-sign {
+    font-size: 28.7px;
+    font-weight: 500;
+  }
+  .progress-font {
+    font-family: "Encode Sans Condensed", serif;
+    font-weight: 800;
+    font-size: 63.2px;
+  }
+  .ProgressCircle-Image-div {
+    /* width: 100%; */
+  }
+  .ProgressCircle-Image {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    /* bottom: 10%; */
+    /* right: 18%; */
+    /* height: 800px; */
+    /* overflow: hidden; */
+    /* bottom: 0%; */
   }
 }

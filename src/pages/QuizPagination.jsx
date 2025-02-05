@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState } from "react";
 import "./QuizPagination.css";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
@@ -26,7 +25,7 @@ const cardsData = [
   },
 ];
 
-const PaginatedCards = () => {
+const PaginatedCards = ({ onComplete }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const [answered, setAnswered] = useState(false);
@@ -38,6 +37,8 @@ const PaginatedCards = () => {
       setCurrentCardIndex(currentCardIndex + 1);
       setAnswered(false); // Reset answered state when moving to next question
       setSelectedOption(""); // Clear selected option
+    } else {
+      onComplete();
     }
   };
 
@@ -141,7 +142,7 @@ const PaginatedCards = () => {
             {`${currentCardIndex + 2}/5`}
             <button
               onClick={handleNext}
-              disabled={currentCardIndex === cardsData.length - 1}
+              // disabled={currentCardIndex === cardsData.length - 1}
               className={`px-4 py-2 text-black font-medium rounded-lg`}
             >
               <SlArrowRight style={{ fontSize: "28px", color: "#575757" }} />

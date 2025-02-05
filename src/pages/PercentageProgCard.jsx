@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import womenpic from "./images/woman.png";
+
 import "./PercentageProgCard.css";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 function PercentageProgCard() {
+  const [percentage, setPercentage] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (percentage < 67) {
+        setPercentage(percentage + 1);
+      }
+    }, 50);
+  }, [percentage]);
+  const percetageSign = `<span style={{fontSize:'16px'}}>%</span>`;
   return (
-    <div className="percentageCard-main">
+    <div className="percentageCard-main mx-auto">
       <div className="PercentageCard">
         {/* Left Section */}
-        <div className="percentageLeft-text">
+        <div className="percentageLeft-text text-start">
           <h1 className="PercetageCard-heading">
             Achieve Your Dream Figure with Quick and Effective Workouts.
           </h1>
@@ -15,13 +28,13 @@ function PercentageProgCard() {
             loss...
           </p>
           {/* Progress Circle div */}
-          <div className="ProgressCircle-Percentage">
+          {/* <div className="ProgressCircle-Percentage">
             <svg
               className="size-full -rotate-180"
               viewBox="0 0 40 40"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* <!-- Background Circle --> */}
+              
               <circle
                 cx="18"
                 cy="18"
@@ -30,34 +43,43 @@ function PercentageProgCard() {
                 className="stroke-current text-gray-200"
                 strokeWidth="1"
               ></circle>
-              {/* <!-- Progress Circle --> */}
+             
               <circle
                 cx="18"
                 cy="18"
                 r="16"
                 fill="none"
-                className="stroke-current text-blue-600"
+                className="stroke-current progressCircle-color"
                 strokeWidth="1"
                 stroke-dasharray="100"
-                stroke-dashoffset="35"
+                stroke-dashoffset="0"
                 strokeLinecap="round"
               ></circle>
             </svg>
 
-            {/* <!-- Percentage Text --> */}
+           
             <div className="ProgressCircle-Content absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              {/* <span className="progressInter-Number text-center text-3xl font-bold text-blue-600"> */}
-              {/* <p>67</p>% */}
-              <span className="progress-font">65</span> %
+             
+              <span className="progress-font">67</span>
+              <span className="percentage-sign">%</span>
+            </div>
+          </div> */}
+          <div className="ProgressCircle-Percentage">
+            <div className="ProgressCircle-Content">
+              <CircularProgressbar
+                className="progress-font"
+                value={percentage}
+                text={`${percentage} %`}
+              />
+              {/* <span className="percentage-sign">%</span> */}
             </div>
           </div>
         </div>
         <div className="ProgressCircle-Image-div">
           <img
-            id="ProgressCircle-Image"
             src={womenpic}
             alt="Fitness Woman"
-            className="w-full max-w-sm md:max-w-lg rounded-xl"
+            className="ProgressCircle-Image"
           />
         </div>
       </div>

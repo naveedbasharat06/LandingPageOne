@@ -13,18 +13,21 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  /* background-size: 100vw 100vh; */
+  /* background-repeat: no-repeat; */
 }
 @media only screen and (max-width: 1680px) {
   .App {
     max-width: 1680px;
     /* height: 1080px; */
     height: 100%;
-
     /* box-sizing: border-box; */
     font-family: "Jost" !important;
     background-image: url("./pages/images/Rectangle.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* background-size: 100vw 100vh; */
+
     background-size: cover;
     background-position: center;
   }

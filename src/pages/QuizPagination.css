@@ -47,11 +47,10 @@
   width: 582px;
   height: 72px;
   border-radius: 12px;
-
-  /* border: 1px solid #1e1e1e; */
 }
 .customBtnStyle {
   background-color: #e9639f;
+  /* border: 1px solid #1e1e1e; */
 }
 .Quiz-option-radioBtn {
   font-size: 20px;
