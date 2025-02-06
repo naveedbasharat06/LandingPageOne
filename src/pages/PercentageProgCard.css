@@ -51,12 +51,15 @@
 .ProgressCircle-Content {
   background-color: #ffffff;
   border-radius: 50%;
-  padding: 0px;
+  padding: 27px;
+  width: 160px;
+  outline: 15px solid #e0e0f9;
   text-align: center;
-  margin: 11px;
+  margin: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #409cd1;
+  display: inline-block;
 }
 .ProgressCircle-Content {
   /* text-align: center; */
@@ -140,9 +143,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 158px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 11px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -228,9 +233,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 160px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 11px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -317,9 +324,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 160px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 11px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -407,9 +416,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 160px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 11px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -496,9 +507,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 160px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 11px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -588,9 +601,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 25px;
+    width: 160px;
+    outline: 16px solid #e0e0f9;
+    margin: 12px;
     text-align: center;
-    margin: 0px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -681,9 +696,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 15px;
+    width: 123px;
+    outline: 15px solid #e0e0f9;
+    margin: 10px;
     text-align: center;
-    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -772,9 +789,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 15px;
+    width: 123px;
+    outline: 15px solid #e0e0f9;
+    margin: 10px;
     text-align: center;
-    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -815,7 +834,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
+
     /* // */
     position: relative;
 
@@ -861,9 +880,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 15px;
+    width: 123px;
+    outline: 15px solid #e0e0f9;
+    margin: 10px;
     text-align: center;
-    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;
@@ -950,9 +971,11 @@
   .ProgressCircle-Content {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 0px;
+    padding: 15px;
+    width: 123px;
+    outline: 15px solid #e0e0f9;
+    margin: 10px;
     text-align: center;
-    margin: 9px;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #409cd1;

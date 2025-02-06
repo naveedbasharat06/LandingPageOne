@@ -2,18 +2,24 @@ import "./App.css";
 import PaginatedCards from "./pages/QuizPagination";
 import PercentageProgCard from "./pages/PercentageProgCard";
 import Header1 from "./pages/Header1";
-import { useState } from "react";
+import QuizContent from "./pages/QuizContent";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
 import * as motion from "motion/react-client";
+import QuizFooter from "./pages/QuizFooter";
 function App() {
   // State to track which component to display
   const [selectedComponent, setSelectedComponent] = useState("Header1");
   const [quizCompleted, setQuizCompleted] = useState(false);
+  const [circleCompleted, setcircleCompleted] = useState(false);
   const showPaginationCards = () => {
     setSelectedComponent("PaginatedCards");
   };
   const handleQuizCompletion = () => {
     setQuizCompleted(true);
+  };
+  const handleCircleComplete = () => {
+    setcircleCompleted(true);
   };
   return (
     <>
@@ -43,7 +49,7 @@ function App() {
               )}
             </motion.div>
           )}
-          {quizCompleted && (
+          {quizCompleted && !circleCompleted && (
             <motion.div
               key="PercentageProgCard"
               initial={{ opacity: 0, x: 100 }}
@@ -51,12 +57,23 @@ function App() {
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 2 }}
             >
-              <PercentageProgCard />
+              <PercentageProgCard onCircleCompleted={handleCircleComplete} />
+            </motion.div>
+          )}
+          {circleCompleted && (
+            <motion.div
+              key="QuizContent"
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 2 }}
+            >
+              <QuizContent />
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-      {/* <PercentageProgCard /> */}
+      <QuizFooter />
     </>
   );
 }

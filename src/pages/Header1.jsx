@@ -38,7 +38,7 @@ const Header1 = ({ onGenderSelect }) => {
             <button
               className={`radioBtn w-full px-3 py-3 text-center font-medium rounded-lg relative ${
                 selectedOption === "women"
-                  ? "bg-purple-500 text-white border-purple-500"
+                  ? "bg-purple-500  bg-[linear-gradient(90deg,_rgba(233,99,159,1)_0%,_rgba(129,67,226,1)_73%)]"
                   : "bg-white text-black border-gray-300"
               }`}
               onClick={() => handleOptionChange("women")}
@@ -58,7 +58,7 @@ const Header1 = ({ onGenderSelect }) => {
             <button
               className={`radioBtn w-full px-3 py-3 text-center font-medium rounded-lg relative ${
                 selectedOption === "men"
-                  ? "bg-purple-500 text-white border-purple-500"
+                  ? "bg-purple-500  bg-[linear-gradient(90deg,_rgba(233,99,159,1)_0%,_rgba(129,67,226,1)_73%)]"
                   : "bg-white text-black border-gray-300"
               }`}
               onClick={() => handleOptionChange("men")}
