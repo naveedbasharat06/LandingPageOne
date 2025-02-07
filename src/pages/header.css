@@ -41,7 +41,7 @@
   /* height: 994px; */
   /* transition: transform 0.3s ease-in-out; */
   /* right: 14%; */
-  top: 0%;
+  top: 1%;
   overflow: hidden;
   bottom: 0%;
   left: 34%;
@@ -49,7 +49,8 @@
 }
 .responsive-heading {
   /* Adjust to control character wrapping */
-  line-height: 1.1; /* Tighter line spacing */
+  line-height: 120%;
+  /* Tighter line spacing */
   width: 790px;
   text-align: start;
   font-size: 74px;
@@ -59,7 +60,7 @@
   margin-top: 32px;
   margin-bottom: 53px;
   font-size: 38px;
-  line-height: 2.1rem;
+  line-height: 120%;
 }
 .logos-container {
   display: flex;
@@ -145,13 +146,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 1007px;
-    height: 778px;
+    width: 1175px;
+    /* height: 778px; */
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 43%;
+    left: 35%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -171,7 +172,7 @@
     padding: 0 140px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 26%;
+    bottom: 14%;
     left: 0;
     right: 0;
     align-items: center;
@@ -214,13 +215,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 950px;
-    height: 780px;
+    width: 1052px;
+    /* height: 780px; */
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 39%;
+    left: 33%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -238,9 +239,9 @@
   }
   .logos-container {
     padding: 0 100px; /* Add left and right spacing */
-    gap: 1rem; /* Add spacing between logos */
+    gap: 0rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 13%;
+    bottom: 10%;
     left: 0;
     right: 0;
   }
@@ -253,7 +254,7 @@
 @media (max-width: 1280px) {
   .header-container {
     position: relative;
-    height: 900px;
+    height: 768px;
     overflow: hidden; /* Ensure no overflow issues */
     top: 0%;
     bottom: 0%;
@@ -285,13 +286,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 83%;
-    height: 80%;
+    width: 940px;
+    /* height: 80%; */
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 25%;
+    left: 33%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -315,7 +316,7 @@
     padding: 0 117px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 20%;
+    bottom: 5%;
     left: 0;
     right: 0;
   }
@@ -323,6 +324,96 @@
   /* .logo-item {
     height: 35px;
   } */
+}
+@media (max-width: 1024px) {
+  .header-container {
+    position: relative;
+    height: 768px;
+    overflow: hidden; /* Ensure no overflow issues */
+    top: 0%;
+    bottom: 0%;
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    display: flex; /* Flexbox container */
+    flex-direction: column; /* Default: stack items vertically */
+  }
+  .context-container {
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 680px;
+    z-index: 1;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    right: 0%;
+    width: 76%;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 18px 0px;
+    font-size: 17px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 935px;
+    /* height: 80%; */
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 0%;
+    bottom: 0%;
+    left: 18%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 1.1; /* Tighter line spacing */
+    width: 588px;
+    text-align: start;
+    font-size: 46px;
+    font-weight: 550;
+  }
+  .header-text {
+    margin-top: 33px;
+    margin-bottom: 82px;
+    font-size: 36px;
+    line-height: 2.1rem;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 0px; /* Add left and right spacing */
+    gap: 0rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-item {
+    height: auto;
+  }
+  #WHLogo {
+    width: 170.93px;
+  }
+  #Forbes {
+    width: 118.4px;
+  }
+  #MAYCLINIC {
+    width: 54px;
+    height: auto !important;
+  }
+  #WallStreatJ {
+    width: 322px;
+  }
+  #Vogue {
+    width: 113px;
+  }
 }
 /* Responsive for (tabler/desktop)minumum device the 960px device */
 @media (max-width: 960px) {
@@ -356,13 +447,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 83%;
-    height: 80%;
+    width: 930px;
+    /* height: 80%; */
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 0%;
     bottom: 0%;
-    left: 25%;
+    left: 14%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -383,14 +474,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 40px; /* Add left and right spacing */
+    padding: 0 5px; /* Add left and right spacing */
     gap: 1rem; /* Add spacing between logos */
     position: absolute;
-    bottom: 13%;
+    bottom: 6%;
     left: 0;
     right: 0;
   }
-
+  .logo-item {
+    height: auto;
+  }
+  #WHLogo {
+    width: 168.93px;
+  }
+  #Forbes {
+    width: 115.4px;
+  }
+  #MAYCLINIC {
+    width: 50px;
+    height: auto !important;
+  }
+  #WallStreatJ {
+    width: 315px;
+  }
+  #Vogue {
+    width: 108px;
+  }
   /* .logo-item {
     height: 35px;
   } */
@@ -436,13 +545,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 715px;
+    width: 570px;
     height: 465px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 29%;
     bottom: 0%;
-    left: 4%;
+    left: 14%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -692,13 +801,13 @@
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
-    width: 580px;
-    height: 370px;
+    width: 570px;
+    height: 380px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
     top: 31%;
     bottom: 0%;
-    left: 11%;
+    left: 10%;
     margin-bottom: 6%;
   }
   .responsive-heading {
@@ -712,7 +821,7 @@
   }
   .header-text {
     margin-top: 24px;
-    margin-bottom: 181px;
+    margin-bottom: 189px;
     font-size: 24px;
     line-height: 2.1rem;
   }
@@ -799,7 +908,7 @@
   }
   .context-container {
     margin-top: -10px;
-    margin-left: -15px;
+    margin-left: -23px;
     width: 100%;
     z-index: 1;
     align-items: center;
@@ -818,24 +927,24 @@
   }
   .radioBtn {
     padding: 14px 0px;
-    font-size: 17px;
+    font-size: 20px;
   }
   .header-image {
     /* position: relative; */
     position: absolute;
     /* z-index: -1; */
     width: 570.14px;
-    height: 336px;
+    height: 369px;
     /* transition: transform 0.3s ease-in-out; */
     /* right: 14%; */
-    top: 31%;
+    top: 32%;
     bottom: 0%;
     left: 9.5%;
     margin-bottom: 6%;
   }
   .responsive-heading {
     /* Adjust to control character wrapping */
-    line-height: 1.1; /* Tighter line spacing */
+    line-height: 120%; /* Tighter line spacing */
     width: 100%;
     text-align: start;
     font-size: 40px;
@@ -844,7 +953,7 @@
   }
   .header-text {
     margin-top: 24px;
-    margin-bottom: 157px;
+    margin-bottom: 174px;
     font-size: 22px;
     line-height: 2.1rem;
   }
@@ -869,10 +978,403 @@
     padding: 10px 16px; /* Add left and right spacing */
     gap: 16px; /* Add spacing between logos */
     position: absolute;
-    bottom: 4rem;
+    bottom: 2rem;
     left: 4%;
     right: 0;
     width: 358px;
+    height: 76px;
+    align-items: center;
+  }
+  .top_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 6rem;
+  }
+  .bottom_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* .logo-item {
+    height: 27px;
+  } */
+  #WHLogo {
+    width: 97.47px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 74.07px;
+    height: 20px;
+  }
+  #MAYCLINIC {
+    width: 36.56px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176.89px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 56.51px;
+    height: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .header-container {
+    position: relative;
+    max-width: 375px;
+    height: 844px;
+    /* top: 0%; */
+    /* bottom: 0%; */
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    margin-top: -10px;
+    margin-left: -22px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 100%;
+    height: 144px;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570.14px;
+    height: 360px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 32%;
+    bottom: 0%;
+    left: 9.5%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 120%; /* Tighter line spacing */
+    width: 100%;
+    text-align: start;
+    font-size: 38px;
+    font-weight: 500;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 174px;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0.4rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 358px;
+    align-items: center;
+    display: none;
+  }
+  .logos-container-4Mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 16px; /* Add spacing between logos */
+    position: absolute;
+    bottom: 2rem;
+    left: 4%;
+    right: 0;
+    width: 358px;
+    height: 76px;
+    align-items: center;
+  }
+  .top_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 6rem;
+  }
+  .bottom_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* .logo-item {
+    height: 27px;
+  } */
+  #WHLogo {
+    width: 97.47px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 74.07px;
+    height: 20px;
+  }
+  #MAYCLINIC {
+    width: 36.56px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176.89px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 56.51px;
+    height: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .header-container {
+    position: relative;
+    max-width: 360px;
+    height: 844px;
+    /* top: 0%; */
+    /* bottom: 0%; */
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    margin-top: -13px;
+    margin-left: -26px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 100%;
+    height: 144px;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570.14px;
+    height: 358px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 29%;
+    bottom: 0%;
+    left: 12.5%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 120%; /* Tighter line spacing */
+    width: 100%;
+    text-align: start;
+    font-size: 33px;
+    font-weight: 500;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 174px;
+    font-size: 21px;
+    line-height: 120%;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0.4rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 358px;
+    align-items: center;
+    display: none;
+  }
+  .logos-container-4Mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 8px; /* Add left and right spacing */
+    gap: 16px; /* Add spacing between logos */
+    position: absolute;
+    bottom: 2rem;
+    left: -3%;
+
+    width: 358px;
+    height: 76px;
+    align-items: center;
+  }
+  .top_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 6rem;
+  }
+  .bottom_row_logos {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* .logo-item {
+    height: 27px;
+  } */
+  #WHLogo {
+    width: 97.47px;
+    height: 20px;
+  }
+  #Forbes {
+    width: 74.07px;
+    height: 20px;
+  }
+  #MAYCLINIC {
+    width: 36.56px;
+    height: 40px;
+  }
+  #WallStreatJ {
+    width: 176.89px;
+    height: 15px;
+  }
+
+  #Vogue {
+    width: 56.51px;
+    height: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .header-container {
+    position: relative;
+    max-width: 320px;
+    height: 844px;
+    /* top: 0%; */
+    /* bottom: 0%; */
+
+    overflow: hidden; /* Ensure no overflow issues */
+    /* background: linear-gradient(to right, #ddd5d5, #e0d2b2, #e0b2dc, #c59fe9); */
+  }
+  .contextAndHeaderImage_div {
+    /* flex-direction: row;  */
+    /* Default: stack items vertically */
+  }
+  .context-container {
+    margin-top: -13px;
+    margin-left: -26px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkboxBtn-div {
+    margin-right: 0px;
+    position: relative;
+    /* margin-right: 23px; */
+    flex-direction: column;
+    bottom: 23%;
+    width: 100%;
+    height: 144px;
+  }
+  .headerImg-div {
+  }
+  .radioBtn {
+    padding: 14px 0px;
+    font-size: 20px;
+  }
+  .header-image {
+    /* position: relative; */
+    position: absolute;
+    /* z-index: -1; */
+    width: 570.14px;
+    height: 358px;
+    /* transition: transform 0.3s ease-in-out; */
+    /* right: 14%; */
+    top: 29%;
+    bottom: 0%;
+    left: 12.5%;
+    margin-bottom: 6%;
+  }
+  .responsive-heading {
+    /* Adjust to control character wrapping */
+    line-height: 120%; /* Tighter line spacing */
+    width: 100%;
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    /* height: 192px; */
+  }
+  .header-text {
+    margin-top: 24px;
+    margin-bottom: 179px;
+    font-size: 21px;
+    line-height: 120%;
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px; /* Add left and right spacing */
+    gap: 0.4rem; /* Add spacing between logos */
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 358px;
+    align-items: center;
+    display: none;
+  }
+  .logos-container-4Mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 8px; /* Add left and right spacing */
+    gap: 16px; /* Add spacing between logos */
+    position: absolute;
+    bottom: 2rem;
+    left: 0%;
+    width: 325px;
     height: 76px;
     align-items: center;
   }
